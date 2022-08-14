@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Header = () => {
     return (
-      //prueba de git
+     
               <ContenedorHeader>
           <h1>Mi blog personal</h1>
           <nav>

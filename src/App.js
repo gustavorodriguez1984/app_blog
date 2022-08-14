@@ -4,7 +4,9 @@ import Acerca from './components/Acerca';
 import Inicio from './components/Inicio';
 import Blog from './components/Blog';
 import Header from './components/Header';
+import Post from './components/Post';
 import styled from 'styled-components';
+import Error404 from './components/Error404';
 
 
 const App = () => {
@@ -14,8 +16,10 @@ const App = () => {
         <Header />
         <Main>
           <Routes>
+          <Route path='*' element={<Error404 />} />
             <Route path='/' element={<Inicio />} />
             <Route path='/blog' element={<Blog />} />
+            <Route path='/post/:id' element={<Post />} />
             <Route path='/acerca' element={<Acerca />}/>
           </Routes>
         </Main>
